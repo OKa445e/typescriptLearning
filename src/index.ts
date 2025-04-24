@@ -187,8 +187,18 @@ console.log(products.getId());
 const btn = <HTMLElement>document.getElementById('click');
 // const btn = document.getElementById('click')!
 // const btn = document.getElementById('click') as HTMLElement;
-btn.onclick;
+
 
 const img = document.getElementById('myimg') as HTMLImageElement;
 
-img.src
+// img.src
+
+const form = document.getElementById('myform') as HTMLFormElement;
+
+const submit = document.querySelector('form > input') as HTMLInputElement;
+
+form.onsubmit = (e) => {
+    e.preventDefault();
+    console.log(submit.value);
+    
+}
